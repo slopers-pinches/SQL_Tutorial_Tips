@@ -1,4 +1,5 @@
-#create schema bdm_final;
+/* GO TO DATASETS FOLDER TO IMPORT EMPLOYEES DATA */
+#create schema employees;
 use employees;
 
 # Extract the information about all department managers
@@ -19,6 +20,7 @@ WITH emp_90_91 AS (
 		FROM employees
         WHERE hire_date BETWEEN '1990-01-01' AND '1995-01-01')
 
+# INNER JOIN employees and CTE
 SELECT E.emp_no, D.dept_no, D.from_date, D.to_date 
 	FROM emp_90_91 AS E
     INNER JOIN 
