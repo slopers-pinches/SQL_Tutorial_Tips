@@ -26,5 +26,3 @@ SELECT E.emp_no, D.dept_no, D.from_date, D.to_date
     INNER JOIN 
     dept_manager AS D
     ON E.emp_no = D.emp_no;
-    
-        
